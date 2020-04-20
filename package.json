@@ -1,0 +1,45 @@
+{
+  "name": "react-native-slider-color-picker",
+  "version": "1.0.0",
+  "description": "A color picker on 3 gradient image HSV slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "immutable": "^3.8.2",
+    "prop-types": "^15.5.10",
+    "react-native-smooth-slider": "0.12.0",
+    "tinycolor2": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyskywhy/react-native-slider-color-picker.git"
+  },
+  "keywords": [
+    "android",
+    "color",
+    "color-picker",
+    "gradient",
+    "hsb",
+    "hsv",
+    "ios",
+    "react-native",
+    "react-native-smooth-slider",
+    "rgb",
+    "slider"
+  ],
+  "author": "Li Zheng",
+  "funding": [{
+    "type": "individual",
+    "url": "https://Alipay/flyskywhy@gmail.com"
+  },{
+    "type": "individual",
+    "url": "https://Eth/0xd02fa2738dcbba988904b5a9ef123f7a957dbb3e"
+  }],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flyskywhy/react-native-slider-color-picker/issues"
+  },
+  "homepage": "https://github.com/flyskywhy/react-native-slider-color-picker#readme"
+}
