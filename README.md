@@ -154,4 +154,4 @@ HSV color representation is an object literal with properties:
 
 Alipay: flyskywhy@gmail.com
 
-Eth: 0xd02fa2738dcbba988904b5a9ef123f7a957dbb3e
+ETH: 0xd02fa2738dcbba988904b5a9ef123f7a957dbb3e
