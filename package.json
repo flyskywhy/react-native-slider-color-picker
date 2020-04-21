@@ -1,7 +1,7 @@
 {
   "name": "react-native-slider-color-picker",
   "version": "2.0.0",
-  "description": "A color picker on 3 gradient image HSV slider",
+  "description": "A color picker on 3 gradient image HSV palette slider",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "dependencies": {
     "immutable": "^3.8.2",
     "prop-types": "^15.5.10",
-    "react-native-smooth-slider": "1.1.1",
+    "react-native-smooth-slider": "1.1.2",
     "tinycolor2": "^1.4.1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "hsb",
     "hsv",
     "ios",
+    "palette",
     "react-native",
     "react-native-gesture-handler",
     "react-native-smooth-slider",

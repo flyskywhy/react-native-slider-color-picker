@@ -5,7 +5,7 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-slider-color-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-slider-color-picker "View this project on npm")
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-slider-color-picker "View this project on npm")
 
-A color picker on 3 gradient image HSV slider.
+A color picker on 3 gradient image HSV palette slider.
 
 <img src="https://raw.githubusercontent.com/flyskywhy/react-native-slider-color-picker/master/Screenshots/basic_android.png" width="375">
 
@@ -15,7 +15,7 @@ A color picker on 3 gradient image HSV slider.
 npm i --save react-native-slider-color-picker
 ```
 
-react-native-slider-color-picker 2.0.0+ is smoothed by react-native-gesture-handler, so you need install react-native-gesture-handler (1.1.0+ e.g. 1.2.2 for RN 0.57.2+ , or latest for RN 0.60.0+) by yourself. If you want pure JavaScript, you need install react-native-slider-color-picker@1.0.0 instead.
+react-native-slider-color-picker 2.0.0+ is smoothed by react-native-smooth-slider 1.1.2 which dependent on react-native-gesture-handler, so you need install react-native-gesture-handler (1.1.0+ e.g. 1.2.2 for RN 0.57.2+ , or latest for RN 0.60.0+) by yourself. If you want pure JavaScript, you need `npm i --save react-native-slider-color-picker@1.0.0` instead.
 
 ## Usage
 
