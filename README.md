@@ -11,11 +11,17 @@ A color picker on 3 gradient image HSV palette slider.
 
 ## Install
 
+For RN >= 0.60
 ```shell
-npm i --save react-native-slider-color-picker
+npm i --save react-native-slider-color-picker react-native-gesture-handler
 ```
 
-react-native-slider-color-picker 2.0.0+ is smoothed by react-native-smooth-slider 1.1.2 which dependent on react-native-gesture-handler, so you need install react-native-gesture-handler (1.1.0+ e.g. 1.2.2 for RN 0.57.2+ , or latest for RN 0.60.0+) by yourself. If you want pure JavaScript, you need `npm i --save react-native-slider-color-picker@1.0.0` instead.
+For RN < 0.60
+```shell
+npm i --save react-native-slider-color-picker@2.1.x react-native-gesture-handler@1.2.2
+```
+
+And be aware of https://github.com/software-mansion/react-native-gesture-handler/issues/1164 if you use react-native-web and want to slide on web.
 
 ## Usage
 

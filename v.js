@@ -14,6 +14,8 @@ export class SliderValuePicker extends React.Component {
         super(props, ctx);
 
         const state = {
+            oldColor: props.oldColor,
+
             color: {
                 h: 0,
                 s: 1,
@@ -34,10 +36,16 @@ export class SliderValuePicker extends React.Component {
         || !Immutable.is(Immutable.fromJS(this.state), Immutable.fromJS(nextState));
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.oldColor !== this.props.oldColor) {
-            this.setOldColor(nextProps.oldColor);
+    static getDerivedStateFromProps(nextProps, prevState) {
+        if (nextProps.oldColor !== prevState.oldColor) {
+            return {
+                oldColor: nextProps.oldColor,
+
+                color: tinycolor(nextProps.oldColor).toHsv(),
+            };
         }
+
+        return null;
     }
 
     static propTypes = {
