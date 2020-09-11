@@ -1,6 +1,6 @@
 {
   "name": "react-native-slider-color-picker",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A color picker on 3 gradient image HSV palette slider",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "immutable": "^3.8.2",
     "prop-types": "^15.5.10",
-    "react-native-smooth-slider": "1.1.2",
+    "react-native-smooth-slider": "1.1.5",
     "tinycolor2": "^1.4.1"
   },
   "repository": {
