@@ -68,6 +68,7 @@ export default class SliderColorPickerExample extends React.Component {
                         oldColor={oldColor}
                         trackStyle={[{height: 12, width: width - 48}]}
                         thumbStyle={styles.thumb}
+                        useNativeDriver={true}
                         onColorChange={this.changeColor}
                     />
                 </View>
@@ -77,6 +78,7 @@ export default class SliderColorPickerExample extends React.Component {
                         oldColor={oldColor}
                         trackStyle={[{height: 12, width: width - 48}]}
                         thumbStyle={styles.thumb}
+                        useNativeDriver={true}
                         onColorChange={this.changeColor}
                         style={{height: 12, borderRadius: 6, backgroundColor: tinycolor({h: tinycolor(oldColor).toHsv().h, s: 1, v: 1}).toHexString()}}
                     />
