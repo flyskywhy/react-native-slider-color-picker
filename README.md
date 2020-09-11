@@ -140,6 +140,7 @@ style                 | [style](http://facebook.github.io/react-native/docs/view
 trackStyle            | [style](http://facebook.github.io/react-native/docs/view.html#style)    | Yes      |                           | The style applied to the track
 trackImage            | [source](http://facebook.github.io/react-native/docs/image.html#source)    | Yes      | rainbow_slider.png(h) or saturation_mask.png(s) | Sets an image for the track.
 thumbStyle            | [style](http://facebook.github.io/react-native/docs/view.html#style)    | Yes      |                           | The style applied to the thumb
+useNativeDriver       | bool     | Yes      | false                     | The useNativeDriver parameter in Animated used by react-native-gesture-handler when the user change the value. Default value is false, because some Android phone [PanGestureHandler causes Animated Value to jump when using native driver](https://github.com/software-mansion/react-native-gesture-handler/issues/984)
 
 HSV color representation is an object literal with properties:
 

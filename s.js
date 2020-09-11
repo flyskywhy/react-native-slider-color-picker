@@ -58,6 +58,12 @@ export class SliderSaturationPicker extends React.Component {
         step: PropTypes.number,
         moveVelocityThreshold: PropTypes.number,    // Prevent onValueChange if slide too faster
         trackImage: Image.propTypes.source,
+
+        /**
+         * The useNativeDriver parameter in Animated used by react-native-gesture-handler when the user change the value.
+         * Default value is false, because some Android phone [PanGestureHandler causes Animated Value to jump when using native driver](https://github.com/software-mansion/react-native-gesture-handler/issues/984)
+         */
+        useNativeDriver: PropTypes.bool,
     };
 
     static defaultProps = {
@@ -66,6 +72,7 @@ export class SliderSaturationPicker extends React.Component {
         step: 0.01,
         moveVelocityThreshold: 2000,
         trackImage: require('./saturation_mask.png'),
+        useNativeDriver: false,
     };
 
     getColor() {
@@ -108,6 +115,7 @@ export class SliderSaturationPicker extends React.Component {
             maximumValue,
             step,
             moveVelocityThreshold,
+            useNativeDriver,
         } = this.props;
 
         let thumbColor = tinycolor({
@@ -127,6 +135,7 @@ export class SliderSaturationPicker extends React.Component {
                     value={color.s}
                     step={step}
                     moveVelocityThreshold={moveVelocityThreshold}
+                    useNativeDriver={useNativeDriver}
                     onValueChange={value => this._onColorChange(value)}
                     onSlidingComplete={value => this._onColorChange(value, 'end')}/>
             </View>

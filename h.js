@@ -58,6 +58,12 @@ export class SliderHuePicker extends React.Component {
         step: PropTypes.number,
         moveVelocityThreshold: PropTypes.number,    // Prevent onValueChange if slide too faster
         trackImage: Image.propTypes.source,
+
+        /**
+         * The useNativeDriver parameter in Animated used by react-native-gesture-handler when the user change the value.
+         * Default value is false, because some Android phone [PanGestureHandler causes Animated Value to jump when using native driver](https://github.com/software-mansion/react-native-gesture-handler/issues/984)
+         */
+        useNativeDriver: PropTypes.bool,
     };
 
     static defaultProps = {
@@ -66,6 +72,7 @@ export class SliderHuePicker extends React.Component {
         step: 1,
         moveVelocityThreshold: 2000,
         trackImage: require('./rainbow_slider.png'),
+        useNativeDriver: false,
     };
 
     getColor() {
@@ -108,6 +115,7 @@ export class SliderHuePicker extends React.Component {
             maximumValue,
             step,
             moveVelocityThreshold,
+            useNativeDriver,
         } = this.props;
 
         let thumbColor = tinycolor({
@@ -128,6 +136,7 @@ export class SliderHuePicker extends React.Component {
                     value={color.h}
                     step={step}
                     moveVelocityThreshold={moveVelocityThreshold}
+                    useNativeDriver={useNativeDriver}
                     onValueChange={value => this._onColorChange(value)}
                     onSlidingComplete={value => this._onColorChange(value, 'end')}/>
             </View>
