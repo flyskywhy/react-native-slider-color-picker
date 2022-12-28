@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-    Image,
     StyleSheet,
     View,
 } from 'react-native';
 import Immutable from 'immutable';
 import tinycolor from 'tinycolor2';
 import Slider from 'react-native-smooth-slider';
+import {ImagePropTypes} from 'deprecated-react-native-prop-types';
 
 export class SliderSaturationPicker extends React.Component {
 
@@ -65,7 +65,7 @@ export class SliderSaturationPicker extends React.Component {
         maximumValue: PropTypes.number,
         step: PropTypes.number,
         moveVelocityThreshold: PropTypes.number,    // Prevent onValueChange if slide too faster
-        trackImage: Image.propTypes.source,
+        trackImage: ImagePropTypes.source,
 
         /**
          * The useNativeDriver parameter in Animated used by react-native-gesture-handler when the user change the value.
