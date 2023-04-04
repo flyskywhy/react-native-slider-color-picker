@@ -39,6 +39,14 @@ import {
     Text,
     View,
 } from 'react-native';
+
+// if react-native-gesture-handler@1.x, no need <GestureHandlerRootView />
+// but just <View />, ref to
+// https://docs.swmansion.com/react-native-gesture-handler/docs/guides/migrating-off-rnghenabledroot/
+// You should put <GestureHandlerRootView /> in your root component,
+// example below is just playing the role of a root component
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+
 import tinycolor from 'tinycolor2';
 
 const {
@@ -67,7 +75,7 @@ export default class SliderColorPickerExample extends React.Component {
         } = this.state;
 
         return (
-            <View style={styles.container}>
+            <GestureHandlerRootView style={styles.container}>
                 <View style={{marginHorizontal: 24, marginTop: 20, height: 12, width: width - 48}}>
                     <SliderHuePicker
                         ref={view => {this.sliderHuePicker = view;}}
@@ -102,7 +110,7 @@ export default class SliderColorPickerExample extends React.Component {
                         style={{height: 12, borderRadius: 6, backgroundColor: 'black'}}
                     />
                 </View>
-            </View>
+            </GestureHandlerRootView>
         );
     }
 }

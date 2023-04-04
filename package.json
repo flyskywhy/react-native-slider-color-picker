@@ -9,7 +9,7 @@
   "dependencies": {
     "immutable": "^3.8.2",
     "prop-types": "^15.5.10",
-    "react-native-smooth-slider": "1.3.8",
+    "react-native-smooth-slider": "1.3.9",
     "tinycolor2": "^1.4.1"
   },
   "repository": {
