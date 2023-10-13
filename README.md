@@ -31,6 +31,9 @@ import {
     SliderHuePicker,
     SliderSaturationPicker,
     SliderValuePicker,
+    // SliderCoolWarmPicker, // usage of SliderCoolWarmPicker please ref to here and coolWarm.js
+    // minColorTemperature,
+    // maxColorTemperature
 } from 'react-native-slider-color-picker';
 import {
     AppRegistry,
